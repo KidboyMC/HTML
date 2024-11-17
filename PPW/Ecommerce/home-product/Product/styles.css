@@ -1,0 +1,583 @@
+/* Global Styles */
+body {
+    font-family: "Satoshi-Regular";
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.top-bar {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 1px 0;
+    font-size: 12px;
+}
+
+.top-bar a{
+    color: white;
+}
+
+#hr1{
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Navigation Bar*/
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0 10%;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 30px;
+    font-family: "IntegralCF-ExtraBold";
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.search-container {
+    margin-left: 2%;
+    display: flex;
+    border-radius: 50px;
+    padding: 5px 0;
+    width: 35%;
+    background-color: rgb(240, 240, 240, 0.9);
+    overflow: hidden;
+}
+
+.search-container input {
+    margin-left: 2%;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    flex: 1;
+    border-radius: 40px;
+    background-color: transparent;
+}
+
+.search-container button {
+    margin-left: 5%;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.cart-profile {
+    margin-left: 2%;
+    display: flex;
+    gap: 10px;
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+    font-size: 14px;
+    color: #777;
+    margin-left: 10%;
+}
+
+.breadcrumb a {
+    color: #777;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Product Section */
+.product-section {
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0 9%;
+}
+
+.product-images {
+    flex: 1;
+}
+
+.product-images img {
+    width: 20%;
+    height: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.product-images-table table {
+    margin-top: 10px;
+}
+
+.main-image-cell {
+    align-content: center;
+    padding: 0 5% 0 3%;
+}
+
+.main-image {
+    width: 300px;
+    height: 450px;
+    border-radius: 5px;
+    padding: 3%;
+    background-color: #f0f0f0;
+    object-fit: cover;
+}
+
+.product-info {
+    flex: 2;
+    padding-left: 5%;
+    overflow: hidden;
+}
+
+.product-title {
+    font-size: 28px;
+    font-family: "Satoshi-Bold";
+    margin-bottom: 0;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: #f0c040;
+    margin-bottom: 15px;
+}
+
+#rating {
+    margin-top: 8px;
+    margin-left: 1%;
+    font-size: 20px;
+    color: black;
+}
+
+.product-price {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: "Satoshi-Bold";
+}
+
+.product-price .original-price {
+    color: #777;
+    text-decoration: line-through;
+    margin-left: 8px;
+    font-size: 24px;
+}
+
+.product-price .discount {
+    background-color: #00adb5;
+    padding: 3px 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.product-description {
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+/* Color Selector */
+.color-selector {
+    color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.color-option {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.color-option.selected {
+    border: 2px solid #333;
+}
+
+/* Size Selector */
+.size-selector {
+    color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    gap: 10px;
+    margin: 15px 0 20px 0;
+}
+
+.size-option {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.size-option.selected {
+    background-color: #1abc9c;
+    color: #fff;
+    border-color: #1abc9c;
+}
+
+/* Quantity Selector */
+.quantity-cart-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between the quantity selector and the button */
+    margin-top: 15px; /* Add some space above if needed */
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-selector button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.quantity-selector input {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    border: none;
+    background-color: #f0f0f0;
+}
+
+.add-to-cart-btn {
+    margin-left: 1%;
+    padding: 10px 7%;
+    font-size: 16px;
+    background-color: #222831;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #333;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin: 20px 10%;
+    justify-content: center;
+}
+
+.tab {
+    padding: 10px 10%;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.tab.active {
+    color: black;
+    border-bottom: 3px solid #1abc9c;
+}
+
+/* Reviews Section */
+.reviews-section {
+    margin: 40px 10% 0 10%;
+}
+
+.reviews-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#allreview {
+    font-size: 16px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: auto auto auto;    /* 3 rows */
+    gap: 20px; /* Space between the reviews */
+}
+
+.review-card {
+    border: 1px solid #ddd;
+    padding: 15px 3%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.review-card h4 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.review-card p {
+    margin: 8px 0;
+}
+
+.review-card small {
+    color: #666;
+}
+
+.more-review {
+    display: inline-block;
+    margin: 30px 42% 10px 42%;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 50px;
+    font-family: "Satoshi-Regular";
+    font-size: 15px;
+    width: 15%;
+    background-color: white;
+}
+
+.more-review:hover{
+    cursor: pointer;
+}
+
+/* Offers Section */
+.offers, .top-sales, .category {
+    font-family: "IntegralCF-DemiBold";
+    color: #00adb5;
+    text-align: center;
+    font-size: 28px;
+}
+
+.products {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.products img{
+    padding: 40px;
+    background-color: #f0f0f0;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.product-card {
+    font-family: "Satoshi-Bold";
+    width: 350px;
+}
+
+.product-card-details {
+    text-align: left;
+    margin-left: 7%;
+}
+
+.product-card a {
+    color:#000;
+    font-family: "Satoshi-Bold";
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Newsletter Section */
+.newsletter {
+    margin-top: 2%;
+    background-color: #00C0C7;
+    padding: 2%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.newsletter-content h2 {
+    font-family: "IntegralCF-Bold";
+    font-size: 40px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px 10px 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.newsletter-form button {
+    padding: 10px 30px;
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Footer Section */
+.footer {
+    font-family: "Satoshi-Regular";
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10%;
+    margin-bottom: 2%;
+}
+
+.footer-brand {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-brand h3 {
+    font-family: "IntegralCF-Bold";
+    font-size: 30px;
+    color: #000;
+}
+
+.footer-brand p {
+    margin: 10px 0;
+    color: #666666;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #666666;
+    font-size: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex: 3;
+    justify-content: space-around;
+    min-width: 200px;
+}
+
+.footer-column h4 {
+    letter-spacing: 3px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #666666;
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #00C0C7;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    border-top: 1px solid #cccccc;
+}
+
+@media (max-width: 768px){
+    .main-image {
+        width: 240px;
+    }
+
+    .product-section {
+        flex-direction: column;
+    }
+
+    .product-info {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .more-review {
+        font-size: 10px;
+        width: 20%;
+        margin: 20px 40%;
+    }
+}
+
+@font-face {
+    font-family: 'IntegralCF-Heavy';
+    src: url(../font/Demo_Fonts/Fontspring-DEMO-integralcf-heavy.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IntegralCF-DemiBold';
+    src: url(../font/Demo_Fonts/Fontspring-DEMO-integralcf-demibold.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IntegralCF-Bold';
+    src: url(../font/Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IntegralCF-ExtraBold';
+    src: url(../font/Demo_Fonts/Fontspring-DEMO-integralcf-extrabold.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url(../font/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url(../font/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
