@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular" rel="stylesheet">
+</head>
+<body>
+    <nav class="sidenav">
+        <div id="logo" style="color: white;">SHOP<span style="color: #00ADB5;">.CO</span></div>
+        <div class="menu">
+            <p>MENU</p>
+            <a id="dashboard"><img src="../sidenav-seller-img/Chart.png">Dashboard</a>
+            <a id="manage-order"><img src="../sidenav-seller-img/Document-active.png">Manage Order</a>
+        </div>
+    
+        <div class="others">
+            <p>OTHERS</p>
+            <a id="settings"><img src="../sidenav-seller-img/Setting.png">Settings</a>
+            <a id="accounts"><img src="../sidenav-seller-img/Profile.png">Accounts</a>
+        </div>
+    </nav>
+
+    <section>
+        <div class="isi" id="header">
+            <form id="search-bar">
+                <img width="20" height="20" src="img/search.png"/>
+                <input type="search" placeholder="Search" id="search">
+            </form>
+            <div>
+                <div id="profile">
+                    <img id="pp" src="../home-product/icon/profile.svg">
+                    <a>User</a>
+                    <a><img id="dropdown" src="https://img.icons8.com/ios-filled/50/expand-arrow--v1.png" alt="expand-arrow--v1"/></a>
+                    <a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAuElEQVR4nO2UQQoCMQxFu/MQeiA9jINHcOllNBFhtkICMpiIunVc6Rl0WyniMCBq2xlFcQIfCoX3kkBrzN8UsAyR1bq48+8I0nTXQtIESfeFgCQHkr67qwQfz7MOsGxv4LuQbGaLdTu686fwkiRqEmAdvIQXEk3CBSTiKwDWLFiApGdvAekpXOC7Hr6mEdhmRQ8/NvTPyLwRbr0lFeA26j18rJD1WOr0ULtgwsueA7tMadWtXfC1dQGPzHlQRmGhaQAAAABJRU5ErkJggg=="></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="garis"></div>
+
+        <div class="isi" id="main">
+            <h1>Dashboard</h1>
+            <table class="data">
+                <tr>
+                    <td>
+                        <div class="cards" id="total-revenue">
+                            <h4>Total Revenue</h4>
+                            <h2 class="num">4</h2>
+                            <p>vs last week</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="cards" id="total-income">
+                            <h4>Total Income</h4>
+                            <h2 class="num">4</h2>
+                            <p>vs last week</p>
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="cards" id="order">
+                            <h4>Order</h4>
+                            <h2 class="num">4</h2>
+                            <p>vs last week</p>
+                        </div>
+
+                    </td>
+                    <td id="pojok-kanan">
+                        <div class="cards" id="products-sold">
+                            <h4>Product Sold</h4>
+                            <h2 class="num">4</h2>
+                            <p>vs last week</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="cards" id="statistics">
+                <div class="top">
+                    <h3>Statistics</h3>
+                    <div id="top-right">
+                        <div class="indikator">
+                            <div class="kotak-warna" style="background-color: #222831;"></div>
+                            <p>Revenue</p>
+                        </div>
+                        <div class="indikator">
+                            <div class="kotak-warna" style="background-color: #5D6776;"></div>
+                            <p>Income</p>
+                        </div>
+                        <button>This Month</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards" id="recent-transaction">
+                <div class="top">
+                    <h3>Recent Transactions</h3>
+                    <button>Filter and Sort<img width="15vw" src="img/filter.png"></button>
+                </div>
+                <table id="latest-transaction">
+                    <tr>
+                        <th>Account</th>
+                        <th>Product</th>
+                        <th>Order Date</th>
+                        <th>Receipt Date</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Account</td>
+                        <td>Product</td>
+                        <td>Order Date</td>
+                        <td>Receipt Date</td>
+                        <td>Status</td>
+                    </tr>
+                    <tr>
+                        <td>Account</td>
+                        <td>Product</td>
+                        <td>Order Date</td>
+                        <td>Receipt Date</td>
+                        <td>Status</td>
+                    </tr>
+                    <tr>
+                        <td>Account</td>
+                        <td>Product</td>
+                        <td>Order Date</td>
+                        <td>Receipt Date</td>
+                        <td>Status</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer">
+            <footer>
+                    <div class="banner">
+                        <p>STAY UP TO DATE ABOUT OUR LATEST OFFERS</p>
+                        <div class="mail">
+                            <form id="e-mail">
+                                <img width="18px" src="../footer-img/mail.png">
+                                <input type="email" placeholder="Enter your email address"> 
+                            </form>
+                            <button>Subscribe to Newsletter</button>
+                        </div>
+                    </div>
+                        <div class="detail">
+                            <div style="max-width: 28%;">
+                                <p class="logo-web">SHOP<span style="color: #00ADB5;">.CO</span></p>
+                                <p style="font-size: 14px; font-weight: 50; line-height: 1.5; color: rgba(0, 0, 0, 0.6)">
+                                    We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                                <div class="medsos">
+                                    <div><img src="../footer-img/twitter.png"></div>
+                                    <div style="background-color: #222831;"><img src="../footer-img/facebook.png"></div>
+                                    <div><img src="../footer-img/insta.png"></div>
+                                    <div><img src="../footer-img/github.png"></div>
+                                </div>
+                            </div>
+                            
+                            <table id="about-us">
+                                <tr>
+                                    <th>COMPANY</th>
+                                    <th>HELP</th>
+                                    <th>FAQ</th>
+                                    <th>RECOURCES</th>
+                                </tr>
+                                <tr>
+                                    <td>About</td>
+                                    <td>Customer Support</td>
+                                    <td>Account</td>
+                                    <td>Free eBooks</td>
+                                </tr>
+                                <tr>
+                                    <td>Features</td>
+                                    <td>Delivery Details</td>
+                                    <td>Manage Deliveries</td>
+                                    <td>Development Tutorial</td>
+                                </tr>
+                                <tr>
+                                    <td>Works</td>
+                                    <td>Terms & Conditions</td>
+                                    <td>Orders</td>
+                                    <td>How to -Blog</td>
+                                </tr>
+                                <tr>
+                                    <td>Career</td>
+                                    <td>Privacy Policy</td>
+                                    <td>Payment</td>
+                                    <td>YouTube Playlist</td>
+                                </tr>
+                            </table>
+                    </div>
+                    <div id="garis"></div>
+                    <div class="butom">
+                        <p id="copyright">
+                            Shop.co © 2000-2023, All Rights Reserved
+                        </p>
+    
+                        <div class="badges">
+                            <div><img src="../footer-img/Visa.png"></div>
+                            <div><img src="../footer-img/Mastercard.png"></div>
+                            <div><img src="../footer-img/Paypal.png"></div>
+                            <div><img src="../footer-img/applepay.png"></div>
+                            <div><img src="../footer-img/G Pay.png"></div>
+                        </div>
+                    </div>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>

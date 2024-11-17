@@ -1,0 +1,405 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Satoshi';
+}
+
+button, #submit-add, a, #profile img{
+    cursor: pointer;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    display: flex;
+}
+
+section{
+    color: rgba(57, 62, 70, 1);
+    padding: 3vh 0vw 0vh;
+    width: 85vw;
+    margin-left: 18vw;
+}
+
+button{
+    font-size: 11px;
+    font-weight: 500;
+    color: #00ADB5;
+    background-color: #F6F6F6;
+    border: none;
+    padding: 0.1vh 2vw;
+    border-radius: 1vh;
+}
+
+#logo{
+    font-weight: 800;
+    height: 50px;
+    width: auto;
+    margin-bottom: 7vh;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidenav{
+    position: fixed;
+    width: 18vw;
+    padding: 3vh 2vw;
+    height: 100vh;
+    font-size: 12px;
+    color: rgba(238, 238, 238, 1);
+    background-color: #222831;
+}
+
+.sidenav a{
+    opacity: 0.6;
+    margin: 0.5vh 0vw;
+    padding: 1.8vh 1.5vw;
+    display: inline-flex;
+}
+
+.sidenav a > img{
+    margin-right: 1.3vh;
+    width: 1.2vw;
+    height: auto;
+}
+
+#dashboard{
+    opacity: 1;
+    background-color: rgba(0, 173, 181, 0.15);
+    color: rgba(0, 173, 181, 1);
+    font-weight: 600;
+}
+
+.sidenav div{
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    margin-bottom: 10vh;
+}
+
+#products h3, #statistics h3, .add-product h3{
+    font-family: 'Integral CF Regular';
+}
+
+#products-table, #products-table th, #products-table td{
+    text-align: center;
+    padding: 2vh 0vw;
+    border-bottom: 1px solid;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+#products-table{
+    width: 100%;
+    margin-bottom: 10vh;
+}
+
+#products-table th{
+    color: #949494;
+    font-weight: normal;
+}
+
+/*head*/
+#garis{
+    margin-top: 3vh;
+    border: 0.2px solid #393e461d;
+    border-collapse: collapse;
+}
+
+.isi{
+    padding: 0vh 3vw;
+}
+
+#profile{
+    display: inline-flex;
+}
+
+#profile a, img{
+    align-self: center;
+    align-content: center;
+    font-size: 13px;
+    margin-left: 0.5vw;
+    line-height: 0;
+}
+
+#dropdown{
+    width: 2vh;
+    height: 2vh;
+}
+
+#notif {
+    width: 4vh;
+    height: 4vh;
+}
+
+#search-bar{
+    width: 45%;
+    background-color: rgba(240, 240, 240, 1);
+    display: inline-flex;
+    align-content: center;
+    border-radius: 20vh;
+    padding: 1vh;
+}
+
+#search{
+    outline: none;
+    border: none;
+    outline: none;
+    margin-left: 0.5vw;
+    background-color: rgba(240, 240, 240, 1);
+    /* background-color: #F6F6FB; */
+    width: 100%;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#pp{
+    height: 5vh;
+    width: 5vh;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+h1{
+    font-size: 25px;
+    color: #00ADB5;
+    font-family: 'Integral CF Regular';
+}
+
+/*main*/
+.main{
+    padding: 0vh 3vw;
+}
+
+.add-product form, .input-new-product{
+    display: flex;
+}
+
+.add-product{
+    margin-bottom: 10vh;
+}
+
+.input-new-product{
+    margin-bottom: 3vh;
+}
+
+.input-new-product table{
+    padding-right: 3vw;
+    margin-bottom: 2vh;
+    display: flex;
+    width: min-content;
+    justify-content: space-between;
+}
+
+.input-new-product input{
+    padding: 1vh 1vw;
+    border-radius: 6px;
+    border-color: #D9D9D9;
+    width: 20vw;
+}
+
+#category{
+    padding: 1vh 4%;
+    border-radius: 6px;
+    border-color: #D9D9D9;
+    width: 20vw;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.right-side{
+    text-align: -webkit-center;
+    width: max-content;
+}
+
+#left-side{
+    cursor: pointer;
+    align-content: center;
+    text-align: center;
+    background-color: #D9D9D9;
+    width: 13vw;
+    height: 17vw;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-right: 3vw;
+}
+
+#submit-add{
+    width: 25vw;
+    border-radius: 10vh;
+    border: 0;
+    background-color: #222831;
+    color: white;
+    padding: 1vw;
+}
+
+#submit-add:hover{
+    background-color: #00ADB5;
+}
+/*footer*/
+
+footer{
+    display: grid;
+    padding: 12vh 5vw 1vh;
+    background-color: #F0F0F0;
+}
+
+.footer{
+    position: relative;
+    padding: 12vh 0vh 0vh;
+}
+
+.banner{
+    border-radius: 17px;
+    max-width: 80%;
+    height: 21vh;
+    padding: 3vh 5vw;
+    place-self: center;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background-color: #00ADB5;
+    position: absolute;
+    top: 0;
+}
+
+.banner p{
+    max-width: 50%;
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+#e-mail input{
+    outline: none;
+    border: none;
+    margin-left: 0.5vw;
+    font-size: 11px;
+}
+
+#e-mail{
+    border-radius: 5vh;
+    display: inline-flex;
+    align-items: center;
+    padding: 2vh 2vw;
+}
+
+.mail{
+    margin-left: 2vw;
+}
+
+.mail button{
+    margin-top: 2vh;
+    padding: 2vh 2vw;
+}
+
+.mail button, #e-mail, #e-mail input{
+    width: 100%;
+    border-radius: 5vh;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+#about-us{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 50;
+    width: max-content;
+    margin: 0;
+}
+
+#about-us td{
+    padding-top: 2vh;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#about-us td, #about-us th{
+    padding-left: 3vw;
+}
+
+#about-us th{
+    letter-spacing: 2px;
+    padding-bottom: 1.5vh;
+}
+
+.detail{
+    position: absolute;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 3vh;
+}
+
+.logo-web{
+    margin-bottom: 2vh;
+    font-size: 23px;
+    font-weight: 800;
+    color: #222831;
+}
+
+.medsos{
+    position: absolute;
+    bottom: 0;
+    display: inline-flex;
+}
+
+.medsos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5vh;
+    height: 4.5vh;
+    border: 1px solid;
+    margin-right: 1vw;
+    border-radius: 50%;
+}
+
+.medsos img{
+    margin: 0;
+    width: 2.8vh;
+    height: 2.8vh;
+}
+
+#copyright{
+    opacity: 0.6;
+    font-size: 11px;
+}
+
+.butom{
+    margin: 4vh 0 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.badges{
+    display: flex;
+}
+
+.badges div{
+    display: grid;
+    background-color: white;
+    border: 0.5px solid #D6DCE5;
+    align-content: center;
+    padding: 1vh 0.5vw;
+    margin-left: 1vw;
+}
+
+.badges img{
+    width: 2.7vw;
+    height: auto;
+    margin: 0;
+}

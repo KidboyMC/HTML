@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Satoshi';
+    color: white;
+}
+
+p, a{
+    margin: 0;
+    font-size: 14px;
+}
+
+a, #submit{
+    cursor: pointer;
+}
+
+body{
+    margin: 0;
+    background-color: #222831;
+}
+
+header{
+    backdrop-filter: blur(3px);
+    margin-top: 2.5vh;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 3vh 3vw;
+    border-radius: 13px;
+    width: 40%;
+    align-items: center;
+    top: 0;
+    position: absolute;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.842);
+    justify-content: space-between;
+}
+
+header h3, header a{
+    margin: 0;
+    color: #222831;
+}
+
+.nav{
+    font-size: 12px;
+    padding: 0vh 0.7vw;
+    position: relative;
+}
+
+.icon, .icon-hover{
+    margin-right: 5px;
+    width: 1vw;
+}
+
+.icon-hover{
+    position: absolute;
+    display: none;
+}
+
+.nav:hover .icon-hover{
+    display: block;
+}
+
+.nav:hover .icon{
+    display: none;
+}
+
+section{
+    display: flex;
+    position: relative;
+}
+
+#bg-img{
+    background-image: url(img/bg.jpg);
+    width: 55vw;
+    height: 86vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 3vh;
+    background-size: cover;
+
+}
+
+#logo, #logo span{
+    font-size: 23px;
+    font-weight: 800;
+    font-family: 'Integral CF Regular';
+}
+
+#welkam{
+    color: #00ADB5;
+    margin: 1.5vh 0vh;
+    font-size: 34px;
+    font-family: 'Integral CF Regular';
+}
+
+#login-seller{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;    
+}
+
+#login-seller input{
+    width: 100%;
+    margin-top: 0.6vh;
+    color: black;
+    padding: 1.8vh 1vw;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#email{
+    margin-bottom: 3vh;
+}
+
+#submit{
+    background-color: #00ADB5;
+    margin-top: 5vh;
+    color: #FFFFFF;
+}
+
+#login-seller input, #login-seller label{
+    font-size: 14px;
+}
+
+.log-seller{
+    width: 25vw;
+    margin: 18vh 4vw 6vh 10vw;
+}
+
+#forgot-pass{
+    text-align-last: right;
+    margin: 2vh 0vw 5vh;
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.ditel{
+    margin-left: 20vw;
+}
+
+.ditel a{
+    padding: 1vh 1.3vw;
+}
+
+footer{
+    width: max-content;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 5vw 3vh;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+footer p, footer a{
+    font-size: 12px;
+    color: #A0AEC0;
+}
+
+footer a:hover{
+    color: white;
+}
+
+@media (min-width: 10px) and (max-width: 435px){
+    section{
+    place-content: center;}
+    
+    .log-seller{
+        width: 90%;
+        place-items: center;
+        margin: 18vh 4vw 6vh;
+    }
+    
+    #login-seller{
+        width: 76%;
+    }
+    #bg-img{
+        visibility: hidden;}
+
+    .ditel a {
+        padding: 1vh 1vw;
+    }
+    
+    header{
+        width: 90%;
+    }
+    
+    footer{
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .icon{
+        width: 3vw;
+    }
+
+    
+    
+    .ditel {
+        margin-left: 5vw;
+    }
+    
+    footer a, footer p{
+        font-size: 9px;}
+    
+    header{
+        padding: 2.5vh 3.5vw;
+    }
+    
+    #login-seller input, #login-seller label {
+        font-size: 12px;
+    }
+
+    p, a {
+        margin: 0;
+        font-size: 12px;
+    }
+    
+    #welkam{
+        font-size: 30px;}
+    
+    #login-seller input{
+        padding: 1.8vh 3vw;
+    }    
+}
